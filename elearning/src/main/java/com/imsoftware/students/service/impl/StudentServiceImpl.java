@@ -9,23 +9,19 @@ import java.util.stream.Collectors;
 import com.imsoftware.students.repository.StudentRepository;
 import com.imsoftware.students.repository.SubjectStudentRepository;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.imsoftware.students.domain.StudentDTO;
 import com.imsoftware.students.domain.SubjectStudentResultDTO;
 import com.imsoftware.students.entity.Student;
-import com.imsoftware.students.entity.SubjectStudent;
 import com.imsoftware.students.service.IStudentService;
 
 @Service
 public class StudentServiceImpl implements IStudentService {
 
 	private final StudentRepository studentRepository;
-	
-	private static final Logger log = LoggerFactory.getLogger(StudentServiceImpl.class);
 
 	
 	@Autowired

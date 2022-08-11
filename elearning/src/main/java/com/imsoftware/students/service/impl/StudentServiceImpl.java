@@ -23,7 +23,7 @@ public class StudentServiceImpl implements IStudentService {
 
 	private final StudentRepository studentRepository;
 
-	
+	 
 	@Autowired
 	private  SubjectStudentRepository subjectStudentRepository;
 
